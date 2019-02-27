@@ -51,6 +51,14 @@ public class Shuffler {
      */
     public static void perfectShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+        for (int k = 0; k<=values.length+2; k--){
+            for (int j=0; j<=values.length+1; j--){
+                values[k]=values[j];
+
+
+
+            }
+        }
     }
 
     /**
