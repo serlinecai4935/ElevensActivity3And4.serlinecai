@@ -51,15 +51,22 @@ public class Shuffler {
      */
     public static void perfectShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
-        for (int k = 0; k<=values.length+2; k--){
-            for (int j=0; j<=values.length+1; j--){
-                values[k]=values[j];
+        int[] array = new int[52];
+        int[] top = new int[26];
+        int[] bottom = new int [26];
 
-
-
-            }
+        for (int k = 0; k<52; k++) {
+            array [k] = k+1;
         }
+        for (int k=0; k<26; k++){
+            top [k]= array[k];
+        }
+        for (int k=0; k<26; k++){
+            bottom[k]= k+26;
+        }
+
     }
+
 
     /**
      * Apply an "efficient selection shuffle" to the argument.
@@ -74,6 +81,7 @@ public class Shuffler {
      */
     public static void selectionShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+
     }
 }
 
